@@ -1,8 +1,8 @@
-##Repository Description
+## Repository Description
 
 
 
-###Relevant Files:
+### Relevant Files:
 	- /CQUESST/CQUESST.stan
 	- /CQUESST/data_cmdStan
 	- /CQUESST/init_params
@@ -11,7 +11,7 @@
 
 
 
-###Description of individual files:
+### Description of individual files:
 
 **/CQUESST/CQUESST.stan**
 - This contains the Stan model for implementing CQUESST for the Millennium Tillage Trial (MTT)
@@ -29,7 +29,7 @@
 - the Slurm script that was used for running a single chain on a high performance computing cluster.
 
 
-###Directions for use:
+### Directions for use:
 
 - To run this model, a user needs to download cmdStan from: 
 ```  https://mc-stan.org/users/interfaces/cmdstan ``` 
