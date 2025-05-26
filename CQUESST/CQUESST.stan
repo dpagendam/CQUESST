@@ -383,20 +383,20 @@ parameters {
       real<lower = 0.0, upper = 0.5> sigma2_ROC;
       real<lower = 0.0, upper = 0.5> sigma2_TOC;
       
-      real<lower = -1.0, upper = 1.0> treatment_alpha_Pasture;
-      real<lower = -1.0, upper = 1.0> treatment_alpha_Fallow;
-      real<lower = -1.0, upper = 1.0> treatment_alpha_NN0;
-      real<lower = -1.0, upper = 1.0> treatment_alpha_NN1;
-	  real<lower = -1.0, upper = 1.0> treatment_alpha_MM0;
-      real<lower = -1.0, upper = 1.0> treatment_alpha_MM1;
-      real<lower = -1.0, upper = 1.0> treatment_alpha_II0;
-      real<lower = -1.0, upper = 1.0> treatment_alpha_II1;
-      real<lower = -1.0, upper = 1.0> treatment_alpha_IM0;
-      real<lower = -1.0, upper = 1.0> treatment_alpha_IM1;
-      real<lower = -1.0, upper = 1.0> treatment_alpha_IN0;
-      real<lower = -1.0, upper = 1.0> treatment_alpha_IN1;
-      real<lower = -1.0, upper = 1.0> treatment_alpha_MN0;
-      real<lower = -1.0, upper = 1.0> treatment_alpha_MN1;
+      real<lower = -5.0, upper = 5.0> treatment_alpha_Pasture;
+      real<lower = -5.0, upper = 5.0> treatment_alpha_Fallow;
+      real<lower = -5.0, upper = 5.0> treatment_alpha_NN0;
+      real<lower = -5.0, upper = 5.0> treatment_alpha_NN1;
+	  real<lower = -5.0, upper = 5.0> treatment_alpha_MM0;
+      real<lower = -5.0, upper = 5.0> treatment_alpha_MM1;
+      real<lower = -5.0, upper = 5.0> treatment_alpha_II0;
+      real<lower = -5.0, upper = 5.0> treatment_alpha_II1;
+      real<lower = -5.0, upper = 5.0> treatment_alpha_IM0;
+      real<lower = -5.0, upper = 5.0> treatment_alpha_IM1;
+      real<lower = -5.0, upper = 5.0> treatment_alpha_IN0;
+      real<lower = -5.0, upper = 5.0> treatment_alpha_IN1;
+      real<lower = -5.0, upper = 5.0> treatment_alpha_MN0;
+      real<lower = -5.0, upper = 5.0> treatment_alpha_MN1;
 }
 
 
@@ -527,8 +527,8 @@ model {
 
 	  // these are the log of the multiplicative effects
 	  // the fallow treatment is equal to -1 times the sum of the parameters below
-      treatment_alpha_Fallow ~ normal(1.0, 5.0);
-      treatment_alpha_Pasture ~ normal(1.0, 5.0);
+      treatment_alpha_Fallow ~ normal(0.0, 1.0);
+      treatment_alpha_Pasture ~ normal(0.0, 1.0);
       treatment_alpha_NN0 ~ normal(0.0, 1.0);
       treatment_alpha_NN1 ~ normal(0.0, 1.0);
       treatment_alpha_MM0 ~ normal(0.0, 1.0);
